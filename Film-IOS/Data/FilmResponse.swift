@@ -15,10 +15,6 @@ struct FilmListResponse: Codable {
     }
 }
 
-struct FilmResponse: Codable {
-    let film: Film
-}
-
 struct Film: Codable {
     let imdbID: String
     let Title: String

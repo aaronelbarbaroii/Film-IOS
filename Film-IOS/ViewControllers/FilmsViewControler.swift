@@ -23,6 +23,8 @@ class FilmsViewControler: UIViewController, UITableViewDataSource, UISearchBarDe
         searchController.searchBar.delegate = self
         self.navigationItem.searchController = searchController
         
+        
+        
     }
     
     func findFilmsByName(query: String) {

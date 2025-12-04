@@ -39,7 +39,7 @@ class FilmProvider {
         do {
             let (data, _) = try await URLSession.shared.data(from: url)
             
-            return try JSONDecoder().decode(FilmResponse.self, from: data).film
+            return try JSONDecoder().decode(Film.self, from: data)
         } catch {
             debugPrint(error)
             return nil
